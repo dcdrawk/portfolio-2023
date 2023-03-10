@@ -9,31 +9,6 @@
   </section>
 </template>
 
-<script>
-
-export default {
-  // Mixins
-  mixins: [],
-
-  // Props
-  props: {
-    myProp: {
-      type: String,
-      default: ''
-    }
-  },
-
-  // Setup
-  setup (props, context) {
-    const imgSrc = '/img/desktop.jpg'
-
-    return {
-      imgSrc
-    }
-  }
-}
-</script>
-
 <style lang="postcss" scoped>
 .app-hero {
   position: relative;

@@ -14,21 +14,15 @@
   </section>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppSection',
-
-  // Props
-  props: {
-    hideDivider: {
-      type: Boolean,
-      default: false
-    },
-    dividerMargin: {
-      type: String,
-      default: undefined
-    }
+<script setup>
+defineProps({
+  hideDivider: {
+    type: Boolean,
+    default: false
+  },
+  dividerMargin: {
+    type: String,
+    default: undefined
   }
-}
+})
 </script>

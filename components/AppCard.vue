@@ -7,22 +7,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppCard',
-
-  props: {
-    padding: {
-      type: String,
-      default: 'p-4'
-    },
-    rounded: {
-      type: String,
-      default: 'rounded-md'
-    }
+<script setup>
+defineProps({
+  padding: {
+    type: String,
+    default: 'p4'
   },
-
-  setup () {}
-}
+  rounded: {
+    type: String,
+    default: 'rounded-md'
+  }
+})
 </script>

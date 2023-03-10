@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome/index.es'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 
 import {
   faBars,
@@ -17,6 +17,7 @@ import {
   faGithub
 } from '@fortawesome/free-brands-svg-icons'
 
+config.autoAddCss = false
 
 library.add(
   faBars,
@@ -30,6 +31,6 @@ library.add(
   faMoon
 )
 
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon, {})
 })

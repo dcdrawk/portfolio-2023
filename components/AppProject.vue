@@ -180,96 +180,83 @@
   </div>
 </template>
 
-<script>
-import { computed } from 'vue'
+<script setup>
+// import { computed } from 'vue'
 
-export default {
-  // Name
-  name: 'AppProject',
-
-  // Props
-  props: {
-    title: {
-      type: String,
-      default: ''
-    },
-    subtitle: {
-      type: String,
-      default: ''
-    },
-    date: {
-      type: String,
-      default: ''
-    },
-    anchor: {
-      type: String,
-      default: ''
-    },
-    breadcrumb: {
-      type: String,
-      default: ''
-    },
-    website: {
-      type: String,
-      default: ''
-    },
-    github: {
-      type: String,
-      default: ''
-    },
-    summary: {
-      type: String,
-      default: ''
-    },
-    process: {
-      type: String,
-      default: ''
-    },
-    result: {
-      type: String,
-      default: ''
-    },
-    technology: {
-      type: Array,
-      default: () => []
-    },
-    roles: {
-      type: Array,
-      default: () => []
-    },
-    img: {
-      type: [String, Object],
-      default: ''
-    },
-    imgRight: {
-      type: Boolean,
-      default: false
-    },
-    imgGallery: {
-      type: Array,
-      default: () => []
-    },
-    youtubeId: {
-      type: String,
-      default: ''
-    },
-    featuredImage: {
-      type: Boolean,
-      default: false
-    }
+// Props
+const props = defineProps({
+  title: {
+    type: String,
+    default: ''
   },
-
-  // Setup
-  setup (props, context) {
-    const showLinks = computed(() => props.website || props.github)
-    const youtubeSrc = computed(() => `https://www.youtube.com/embed/${props.youtubeId}?autoplay=0&modestbranding=1`)
-
-    return {
-      showLinks,
-      youtubeSrc
-    }
+  subtitle: {
+    type: String,
+    default: ''
+  },
+  date: {
+    type: String,
+    default: ''
+  },
+  anchor: {
+    type: String,
+    default: ''
+  },
+  breadcrumb: {
+    type: String,
+    default: ''
+  },
+  website: {
+    type: String,
+    default: ''
+  },
+  github: {
+    type: String,
+    default: ''
+  },
+  summary: {
+    type: String,
+    default: ''
+  },
+  process: {
+    type: String,
+    default: ''
+  },
+  result: {
+    type: String,
+    default: ''
+  },
+  technology: {
+    type: Array,
+    default: () => []
+  },
+  roles: {
+    type: Array,
+    default: () => []
+  },
+  img: {
+    type: [String, Object],
+    default: ''
+  },
+  imgRight: {
+    type: Boolean,
+    default: false
+  },
+  imgGallery: {
+    type: Array,
+    default: () => []
+  },
+  youtubeId: {
+    type: String,
+    default: ''
+  },
+  featuredImage: {
+    type: Boolean,
+    default: false
   }
-}
+})
+
+const showLinks = computed(() => props.website || props.github)
+const youtubeSrc = computed(() => `https://www.youtube.com/embed/${props.youtubeId}?autoplay=0&modestbranding=1`)
 </script>
 
 <style lang="postcss" scoped>
@@ -288,7 +275,6 @@ export default {
   }
 
   &__youtube-spinner {
-    /* top: calc(50% - 40px); */
     left: calc(50% - 40px);
   }
 }

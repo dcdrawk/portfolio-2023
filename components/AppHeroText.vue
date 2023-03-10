@@ -21,32 +21,8 @@
         </p>
       </blockquote>
     </div>
-
-    <!-- <h3>
-      WebDev done right.
-    </h3> -->
   </div>
 </template>
-
-<script>
-export default {
-  // Name
-  name: 'AppHeroText',
-
-  // Props
-  props: {
-    myProp: {
-      type: String,
-      default: ''
-    }
-  },
-
-  // Setup
-  setup (props, context) {
-    return {}
-  }
-}
-</script>
 
 <style lang="postcss" scoped>
 .app-hero-text {

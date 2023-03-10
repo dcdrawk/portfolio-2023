@@ -15,29 +15,15 @@
   </AppCard>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppSkill',
-
-  // Props
-  props: {
-    title: {
-      type: String,
-      default: ''
-    },
-    items: {
-      type: Array,
-      default: () => []
-    }
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    default: ''
   },
-
-  // Setup
-  setup (props, context) {
-    return {}
+  items: {
+    type: Array,
+    default: () => []
   }
-}
+})
 </script>
-
-<style scoped>
-</style>

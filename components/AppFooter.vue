@@ -6,17 +6,6 @@
   </footer>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppFooter',
-
-  // Setup
-  setup (props, context) {
-    const year = new Date().getFullYear()
-    return {
-      year
-    }
-  }
-}
+<script setup>
+const year = new Date().getFullYear()
 </script>

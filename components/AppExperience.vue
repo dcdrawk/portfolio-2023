@@ -2,9 +2,6 @@
   <AppCard
     padding="py-4 px-4"
   >
-    <!-- <div
-      class="px-4"
-    > -->
     <h3 class="text-xl font-semibold mb-2 dark:text-white transition-colors duration-500">
       {{ title }}
     </h3>
@@ -25,7 +22,6 @@
         />
       </div>
     </div>
-    <!-- </div> -->
 
     <div
       v-if="collapsible"
@@ -42,76 +38,56 @@
   </AppCard>
 </template>
 
-<script>
-import { ref } from 'vue'
-
-export default {
-  // Name
-  name: 'AppExperience',
-
-  // Props
-  props: {
-    title: {
-      type: String,
-      default: ''
-    },
-
-    company: {
-      type: String,
-      default: ''
-    },
-
-    startDate: {
-      type: String,
-      default: ''
-    },
-
-    collapsible: {
-      type: Boolean,
-      default: false
-    },
-
-    endDate: {
-      type: String,
-      default: 'Present'
-    },
-
-    isOpen: {
-      type: Boolean,
-      default: true
-    }
+<script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    default: ''
   },
 
-  emits: ['toggle'],
+  company: {
+    type: String,
+    default: ''
+  },
 
-  // Setup
-  setup (props, context) {
-    const slot = ref(null)
+  startDate: {
+    type: String,
+    default: ''
+  },
 
-    function toggleExperience () {
-      context.emit('toggle')
-      const height = slot.value.scrollHeight
-      slotStyle.value.height = props.isOpen ? '0px' : `${height}px`
-    }
+  collapsible: {
+    type: Boolean,
+    default: false
+  },
 
-    // const iconText = computed(() => props.isOpen ? 'Hide Role' : 'View Role')
+  endDate: {
+    type: String,
+    default: 'Present'
+  },
 
-    // const iconClass = computed(() => props.isOpen ? 'icon-up' : 'icon-down')
-
-    // const slotClass = computed(() => props.collapsible && props.isOpen ? 'open' : 'closed')
-
-    const slotStyle = ref(props.collapsible ? { height: '0px' } : null)
-
-    return {
-      slot,
-      toggleExperience,
-      // iconClass,
-      // iconText,
-      // slotClass,
-      slotStyle
-    }
+  isOpen: {
+    type: Boolean,
+    default: true
   }
+})
+
+defineEmits(['toggle'])
+
+const slot = ref(null)
+
+function toggleExperience () {
+  context.emit('toggle')
+  const height = slot.value.scrollHeight
+  slotStyle.value.height = props.isOpen ? '0px' : `${height}px`
 }
+
+// const iconText = computed(() => props.isOpen ? 'Hide Role' : 'View Role')
+
+// const iconClass = computed(() => props.isOpen ? 'icon-up' : 'icon-down')
+
+// const slotClass = computed(() => props.collapsible && props.isOpen ? 'open' : 'closed')
+
+const slotStyle = ref(props.collapsible ? { height: '0px' } : null)
 </script>
 
 <style scoped>

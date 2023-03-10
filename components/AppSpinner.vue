@@ -5,26 +5,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppSpinner',
-
-  // Props
-  props: {
-    myProp: {
-      type: String,
-      default: ''
-    }
-  },
-
-  // Setup
-  setup (props, context) {
-    return {}
-  }
-}
-</script>
-
 <style scoped>
 .lds-ellipsis {
   display: inline-block;

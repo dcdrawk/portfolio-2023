@@ -35,35 +35,14 @@
   </transition>
 </template>
 
-<script>
-import { computed, ref } from 'vue'
+<script setup>
+const navIsOpen = ref(false)
 
-export default {
-  // Name
-  name: 'AppHeader',
-
-  // Props
-  props: {
-    myProp: {
-      type: String,
-      default: ''
-    }
-  },
-
-  // Setup
-  setup (props, context) {
-    const navIsOpen = ref(false)
-    function toggleNav () {
-      navIsOpen.value = !navIsOpen.value
-    }
-    const toggleIcon = computed(() => navIsOpen.value ? 'times' : 'bars')
-    return {
-      toggleNav,
-      toggleIcon,
-      navIsOpen
-    }
-  }
+function toggleNav () {
+  navIsOpen.value = !navIsOpen.value
 }
+
+const toggleIcon = computed(() => navIsOpen.value ? 'times' : 'bars')
 </script>
 
 <style scoped>

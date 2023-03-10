@@ -7,19 +7,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'AppDivider',
-
-  // Props
-  props: {
-    margin: {
-      type: String,
-      default: 'my-6 lg:my-10'
-    }
+<script setup>
+defineProps({
+  margin: {
+    type: String,
+    default: 'my-6 lg:my-10'
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

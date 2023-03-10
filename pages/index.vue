@@ -1,10 +1,8 @@
 <template>
   <div class="home">
-    <!-- <AppHeader /> -->
+    <AppHeader />
 
     <AppHero />
-
-    <!-- <About /> -->
 
     <HomeExperience />
 
@@ -12,12 +10,12 @@
 
     <HomeProjects no-divider />
 
-    <!-- <AppFooter /> -->
+    <AppFooter />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Home'
 }
 </script>
