@@ -15,65 +15,45 @@
   </AppSection>
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'Skills',
-
-  // Props
-  props: {
-    myProp: {
-      type: String,
-      default: ''
-    }
-  },
-
-  // Setup
-  setup (props, context) {
-    const skills = [{
-      title: 'Frontend',
-      items: [
-        'JavaScript',
-        'HTML / CSS',
-        'SASS / SCSS',
-        'Vue.js',
-        'Nuxt.js',
-        'React'
-      ]
-    }, {
-      title: 'Backend',
-      items: [
-        'PHP / MySQL',
-        'Laravel',
-        'Symfony',
-        'Node',
-        'GraphQL',
-        'Firebase'
-      ]
-    }, {
-      title: 'Development Tools',
-      items: [
-        'Unit Testing (Jest)',
-        'Webpack',
-        'Docker',
-        'Linux',
-        'Github / Bitbucket',
-        'Agile Development'
-      ]
-    }, {
-      title: 'Design Theory',
-      items: [
-        'Interface Design',
-        'Visual Analytics',
-        'Rapid Prototyping',
-        'UX Design Evaluation',
-        'User Testing'
-      ]
-    }]
-
-    return {
-      skills
-    }
-  }
-}
+<script setup>
+const skills = [{
+  title: 'Frontend',
+  items: [
+    'JavaScript',
+    'HTML / CSS',
+    'SASS / SCSS',
+    'Vue.js',
+    'Nuxt.js',
+    'React'
+  ]
+}, {
+  title: 'Backend',
+  items: [
+    'PHP / MySQL',
+    'Laravel',
+    'Symfony',
+    'Node',
+    'GraphQL',
+    'Firebase'
+  ]
+}, {
+  title: 'Development Tools',
+  items: [
+    'Unit Testing (Jest)',
+    'Webpack',
+    'Docker',
+    'Linux',
+    'Github / Bitbucket',
+    'Agile Development'
+  ]
+}, {
+  title: 'Design Theory',
+  items: [
+    'Interface Design',
+    'Visual Analytics',
+    'Rapid Prototyping',
+    'UX Design Evaluation',
+    'User Testing'
+  ]
+}]
 </script>
