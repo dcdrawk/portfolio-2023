@@ -5,10 +5,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "npx eslint --ext .js,.vue --ignore-path .gitignore"
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "eslint": "^8.35.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.9.0",
     "nuxt": "^3.2.3"
   },
   "dependencies": {
