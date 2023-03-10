@@ -24,49 +24,31 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'UFOria',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/projects/uforia/screenshot1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/uforia/screenshot2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/uforia/screenshot3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/uforia/screenshot4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/uforia/screenshot5.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot5.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/uforia/screenshot6.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/uforia/screenshot6.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/projects/uforia/screenshot1.jpg',
+    alt: 'Uforia'
+  },
+  {
+    img: '/img/projects/uforia/screenshot2.jpg',
+    alt: 'Uforia'
+  },
+  {
+    img: '/img/projects/uforia/screenshot3.jpg',
+    alt: 'Uforia'
+  },
+  {
+    img: '/img/projects/uforia/screenshot4.jpg',
+    alt: 'Uforia'
+  },
+  {
+    img: '/img/projects/uforia/screenshot5.jpg',
+    alt: 'Uforia'
+  },
+  {
+    img: '/img/projects/uforia/screenshot6.jpg',
+    alt: 'Uforia'
   }
-}
+]
 </script>

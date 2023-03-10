@@ -26,49 +26,31 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'Harvey',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/projects/harvey/greenscreen1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/greenscreen1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey the Hamster - Green screen 1'
-      },
-      {
-        img: '/img/projects/harvey/greenscreen2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/greenscreen2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey the Hamster - Green screen 2'
-      },
-      {
-        img: '/img/projects/harvey/greenscreen3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/greenscreen3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey the Hamster - Green screen 3'
-      },
-      {
-        img: '/img/projects/harvey/greenscreen4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/greenscreen4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey the Hamster - Green screen 4'
-      },
-      {
-        img: '/img/projects/harvey/harvey3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/harvey3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey!'
-      },
-      {
-        img: '/img/projects/harvey/harvey4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/harvey/harvey4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Harvey again!'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/projects/harvey/greenscreen1.jpg',
+    alt: 'Harvey the Hamster - Green screen 1'
+  },
+  {
+    img: '/img/projects/harvey/greenscreen2.jpg',
+    alt: 'Harvey the Hamster - Green screen 2'
+  },
+  {
+    img: '/img/projects/harvey/greenscreen3.jpg',
+    alt: 'Harvey the Hamster - Green screen 3'
+  },
+  {
+    img: '/img/projects/harvey/greenscreen4.jpg',
+    alt: 'Harvey the Hamster - Green screen 4'
+  },
+  {
+    img: '/img/projects/harvey/harvey3.jpg',
+    alt: 'Harvey!'
+  },
+  {
+    img: '/img/projects/harvey/harvey4.jpg',
+    alt: 'Harvey again!'
   }
-}
+]
 </script>

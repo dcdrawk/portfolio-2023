@@ -24,49 +24,31 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'TheSandwhich',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/projects/sandwich/bender-grab.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/bender-grab.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/sandwich/kitchen-table.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/kitchen-table.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/sandwich/lighting-setup.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/lighting-setup.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/sandwich/test-footage.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/test-footage.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/sandwich/tomato-grab.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/tomato-grab.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      },
-      {
-        img: '/img/projects/sandwich/tomato-slice.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/sandwich/tomato-slice.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Uforia screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/projects/sandwich/bender-grab.jpg',
+    alt: 'The Sandwich'
+  },
+  {
+    img: '/img/projects/sandwich/kitchen-table.jpg',
+    alt: 'The Sandwich'
+  },
+  {
+    img: '/img/projects/sandwich/lighting-setup.jpg',
+    alt: 'The Sandwich'
+  },
+  {
+    img: '/img/projects/sandwich/test-footage.jpg',
+    alt: 'The Sandwich'
+  },
+  {
+    img: '/img/projects/sandwich/tomato-grab.jpg',
+    alt: 'The Sandwich'
+  },
+  {
+    img: '/img/projects/sandwich/tomato-slice.jpg',
+    alt: 'The Sandwich'
   }
-}
+]
 </script>

@@ -26,44 +26,27 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'KinectRemote',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/projects/kinect/kinect-process1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/kinect/kinect-process1.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Kinect project process 1'
-      },
-      {
-        img: '/img/projects/kinect/kinect-process2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/kinect/kinect-process2.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Kinect project process 2'
-      },
-      {
-        img: '/img/projects/kinect/kinect-process3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/kinect/kinect-process3.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Kinect project process 3'
-      },
-      {
-        img: '/img/projects/kinect/kinect-process4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/kinect/kinect-process4.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Kinect project process 4'
-      },
-      {
-        img: '/img/projects/kinect/kinect-process5.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/projects/kinect/kinect-process5.jpg?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Kinect project process 5'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/projects/kinect/kinect-process1.jpg',
+    alt: 'Kinect project process 1'
+  },
+  {
+    img: '/img/projects/kinect/kinect-process2.jpg',
+    alt: 'Kinect project process 2'
+  },
+  {
+    img: '/img/projects/kinect/kinect-process3.jpg',
+    alt: 'Kinect project process 3'
+  },
+  {
+    img: '/img/projects/kinect/kinect-process4.jpg',
+    alt: 'Kinect project process 4'
+  },
+  {
+    img: '/img/projects/kinect/kinect-process5.jpg',
+    alt: 'Kinect project process 5'
   }
-}
+]
 </script>

@@ -29,10 +29,3 @@
     img-right
   />
 </template>
-
-<script>
-export default {
-  // Name
-  name: 'Diceroller'
-}
-</script>
