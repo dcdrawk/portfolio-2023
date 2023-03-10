@@ -16,18 +16,9 @@
 </template>
 
 <script>
-// import AppSection from '@/components/layout/AppSection'
-// import AppSkill from '@/components/AppSkill'
-
 export default {
   // Name
   name: 'Skills',
-
-  // Components
-  // components: {
-  //   AppSection,
-  //   AppSkill
-  // },
 
   // Props
   props: {

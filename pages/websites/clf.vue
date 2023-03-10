@@ -16,17 +16,3 @@
     img-right
   />
 </template>
-
-<script>
-// import AppProject from '@/components/layout/AppProject'
-
-export default {
-  // Name
-  name: 'CLF',
-
-  // Components
-  // components: {
-  //   AppProject
-  // }
-}
-</script>

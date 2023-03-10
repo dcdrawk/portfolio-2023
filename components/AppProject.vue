@@ -1,12 +1,12 @@
 <template>
   <div class="container dark:text-white pt-6 md:pt-12 px-4 xl:px-0">
     <div class="mb-2">
-      <router-link
+      <nuxt-link
         :to="`/#${anchor}`"
         class="inline-block text-tory-blue-400 dark:text-tory-blue-100 underline font-semibold"
       >
         Home
-      </router-link> / {{ breadcrumb }}
+      </nuxt-link> / {{ breadcrumb }}
     </div>
     <h1 class="text-4xl md:text-5xl font-heading font-display">
       {{ title }}
@@ -54,14 +54,6 @@
                 allowfullscreen
               />
             </div>
-            <!-- <div
-              v-else-if="img"
-              class=""
-            >
-              <img
-                :src="img"
-              >
-            </div> -->
           </div>
           <AppImgGallery
             :featured-image="featuredImage"

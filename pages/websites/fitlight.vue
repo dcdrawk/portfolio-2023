@@ -18,17 +18,3 @@
     img-right
   />
 </template>
-
-<script>
-import AppProject from '@/components/layout/AppProject'
-
-export default {
-  // Name
-  name: 'Fitlight',
-
-  // Components
-  // components: {
-  //   AppProject
-  // }
-}
-</script>

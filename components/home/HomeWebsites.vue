@@ -5,7 +5,7 @@
     </template>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <router-link
+      <nuxt-link
         v-for="(website, index) in websites"
         :key="index"
         :to="website.path"
@@ -19,25 +19,15 @@
           <!-- eslint-disable-next-line vue/no-v-html -->
           <div v-html="experience.body" />
         </AppImageCard>
-      </router-link>
+      </nuxt-link>
     </div>
   </AppSection>
 </template>
 
 <script>
-// import AppSection from '@/components/layout/AppSection'
-// import AppImageCard from '@/components/AppImageCard'
-import { reactive } from 'vue'
-
 export default {
   // Name
   name: 'Websites',
-
-  // Components
-  // components: {
-  //   AppSection,
-  //   AppImageCard
-  // },
 
   // Setup
   setup (props, context) {

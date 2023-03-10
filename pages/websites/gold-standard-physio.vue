@@ -19,15 +19,8 @@
 </template>
 
 <script>
-// import AppProject from '@/components/layout/AppProject'
-
 export default {
   // Name
-  name: 'GoldStandardPhysio',
-
-  // Components
-  // components: {
-  //   AppProject
-  // }
+  name: 'GoldStandardPhysio'
 }
 </script>

@@ -20,16 +20,9 @@
 </template>
 
 <script>
-// import AppProject from '@/components/layout/AppProject'
-
 export default {
   // Name
   name: 'USADrives',
-
-  // Components
-  // components: {
-  //   AppProject
-  // },
 
   // Setup
   setup () {

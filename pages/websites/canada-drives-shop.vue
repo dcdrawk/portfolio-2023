@@ -1,4 +1,5 @@
 <template>
+  <!-- test -->
   <AppProject
     title="Canada Drives (Ecommerce)"
     subtitle="Purchase or finance a vehicle from any device"
@@ -22,44 +23,44 @@
 <script>
 export default {
   // Name
-  name: 'SpringFinancial',
+  name: 'CanadaDrivesShop',
 
   // Setup
   setup () {
     const imgGallery = [
       {
-        img: '/img/websites/canada-drives/d2c/d2c-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-landing.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-landing.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-catalog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-catalog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-catalog.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-catalog.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-vehicle.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-vehicle.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-vehicle.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-vehicle.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-browse.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-browse.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-browse.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-browse.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-finance.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-finance.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-finance.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-finance.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-help-centre.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-help-centre.png',
         alt: 'Freedom Car Credit screenshot'
       },
       {
-        img: '/img/websites/canada-drives/d2c/d2c-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
+        img: '/img/websites/canada-drives/d2c/d2c-how-it-works.png',
+        imgWebp: '/img/websites/canada-drives/d2c/d2c-how-it-works.png',
         alt: 'Freedom Car Credit screenshot'
       }
     ]

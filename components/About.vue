@@ -9,10 +9,11 @@
         test
       </div> -->
       <div class="devin">
-        <img
+        <NuxtImg
           src="/img/devin.png"
+          format="webp"
           class="devin__img mr-10 h-auto block flex-grow-1 flex-shrink-0 self-center"
-        >
+        />
       </div>
       <AppCard>
         <p class="mb-3 text-base">
