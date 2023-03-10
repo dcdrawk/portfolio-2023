@@ -35,7 +35,7 @@ export default {
       title: 'Canada Drives (Ecommerce Shop)',
       subtitle: 'Purchase or finance a vehicle from any device',
       img: '/img/websites/canada-drives/cd-shop.jpg',
-      imgTop: '-40px',
+      imgTop: '-100px',
       path: '/websites/canada-drives-shop'
     }, {
       title: 'Canada Drives',

@@ -1,10 +1,11 @@
 <template>
   <div class="app-hero-text flex flex-col md:flex-row h-full py-10 items-center px-4">
     <div class="devin mb-4 flex-shrink-0">
-      <img
+      <NuxtImg
         src="/img/devin.png"
+        format="webp"
         class="devin__img md:mr-10 h-auto block flex-grow-1 flex-shrink-0 self-center"
-      >
+      />
     </div>
 
     <div class="flex flex-col items-center md:items-start">

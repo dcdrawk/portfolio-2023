@@ -7,7 +7,11 @@
       :src="imgSrc"
       :style="{ top: imgTop }"
       class="app-img-card__img w-full relative"
-      />
+      format="webp"
+      width="480"
+      height="480"
+      loading="lazy"
+    />
       <!-- loading="lazy" -->
     <div class="app-img-card__text bg-black bg-opacity-60 absolute right-0 bottom-0 text-white w-full px-4 py-3">
       <h3 class="text-xl font-semibold">
