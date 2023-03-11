@@ -51,7 +51,7 @@ const router = useRouter()
 async function handleNavClick (item) {
   if (route.path !== '/') {
     await router.push({ path: '/' })
-    await new Promise(resolve => setTimeout(resolve, 0))
+    await new Promise(resolve => setTimeout(resolve, 250))
   }
 
   scrollTo(item)
@@ -61,7 +61,7 @@ function scrollTo (item) {
   const isMobile = window?.innerWidth < 768
   const headerOffset = isMobile ? 60 : 140
   const el = document.getElementById(item.anchor)
-  const elPosition = el.getBoundingClientRect().top
+  const elPosition = el?.getBoundingClientRect()?.top
   const offset = elPosition + window.scrollY - headerOffset
 
   window.scrollTo({
@@ -76,7 +76,7 @@ function scrollTo (item) {
 
 const navItems = {
   About: {
-    anchor: 'app-hero'
+    anchor: 'about'
   },
   Experience: {
     anchor: 'experience'

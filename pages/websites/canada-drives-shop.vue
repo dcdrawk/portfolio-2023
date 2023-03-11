@@ -1,23 +1,19 @@
 <template>
-  <!-- test -->
-  <AppProject
-    title="Canada Drives (Ecommerce)"
-    subtitle="Purchase or finance a vehicle from any device"
-    date="October 2020"
-    anchor="websites"
-    breadcrumb="Websites"
-    :technology="[ 'Javascript', 'Vue.js', 'Nuxt.js', 'SSR', 'Node', 'Vuetify', 'SCSS']"
-    :roles="['Developer']"
-    website="https://shop.canadadrives.ca/"
-    summary="
-      A website project for Website On Demand. When I worked on this website, many of the pages,
-      images, and content were completed, but there were still a number of pages to be added.
-      I was tasked with making the website responsive, as well as adding a section for members
-      and distributors; prodiving them with more information about the product.
-    "
-    :img-gallery="imgGallery"
-    featured-image
-  />
+  <div>
+    <AppProject
+      title="Canada Drives (Ecommerce)"
+      subtitle="Purchase or finance a vehicle from any device"
+      date="October 2020"
+      anchor="websites"
+      breadcrumb="Websites"
+      :technology="[ 'Javascript', 'Vue.js', 'Nuxt.js', 'SSR', 'Node', 'Vuetify', 'SCSS']"
+      :roles="['Lead Frontend Developer']"
+      website="https://shop.canadadrives.ca/"
+      summary="Canada Drives vehicle ecommerce platform. Enables users to purchase, finance, or trade-in a vehicle without the hassle of a dealership."
+      :img-gallery="imgGallery"
+      featured-image
+    />
+  </div>
 </template>
 
 <script setup>

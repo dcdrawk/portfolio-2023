@@ -6,14 +6,9 @@
     anchor="websites"
     breadcrumb="Websites"
     :technology="[ 'Javascript', 'Vue.js', 'Nuxt.js', 'SSR', 'Node', 'Tailwind CSS', 'SCSS']"
-    :roles="['Developer']"
+    :roles="['Lead Frontend Developer']"
     website="https://usadrives.com/"
-    summary="
-      A website project for Website On Demand. When I worked on this website, many of the pages,
-      images, and content were completed, but there were still a number of pages to be added.
-      I was tasked with making the website responsive, as well as adding a section for members
-      and distributors; prodiving them with more information about the product.
-    "
+    summary="The website for USA Drives, a sister-brand to Canada Drives for US-based customers"
     :img-gallery="imgGallery"
     featured-image
   />

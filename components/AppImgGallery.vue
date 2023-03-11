@@ -31,7 +31,8 @@
         :src="imageObject.img"
         class="block w-full"
         :alt="`${imageObject.alt} thumbnail`"
-        sizes="sm:calc(50vw - 24px) md:calc(14.29vw + 6px) lg:157px xl:205px"
+        width="200"
+        sizes="sm:350px md:160px"
         format="webp"
       />
     </AppCard>
@@ -44,13 +45,14 @@
     @click="selectedImage = null"
     @keydown.esc="selectedImage = null"
   >
-    <div class="app-img-gallery__dialog-content relative flex">
+    <div class="app-img-gallery__dialog-content relative flex overflow-hidden px-12 max-h-[540px]">
       <button
-        class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center hover:bg-gray-800 transition-colors"
+        class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
         :class="{
-          'opacity-25 cursor-not-allowed': !showPreviousArrow,
+          'opacity-25 cursor-not-allowed hover:bg-gray-800': !showPreviousArrow,
           'opacity-75': showPreviousArrow
         }"
+        aria-label="previous image"
         @click.stop.prevent="goToPreviousImage"
       >
         <FontAwesomeIcon
@@ -60,26 +62,36 @@
       </button>
 
       <AppCard
-        class="app-img-gallery__selected-image w-full"
+        class="app-img-gallery__selected-image w-full overflow-hidden max-w-[960px] relative"
         padding
         rounded
         @click.prevent.stop
       >
-        <NuxtImg
-          :src="selectedImage.img"
-          class="block w-full"
-          sizes="sm:100vw md:960px"
-          :alt="`${selectedImage.alt} screenshot`"
-          format="webp"
-        />
+        <template
+          v-for="(imageObject, index) in images"
+          :key="`screen-${index}`"
+        >
+          <Transition :name="transitionName">
+            <NuxtImg
+              v-show="imageObject.img === selectedImage.img"
+              :src="imageObject.img"
+              class="app-img-gallery__screen block w-full"
+              width="960"
+              height="540"
+              :alt="`${selectedImage.alt} screenshot`"
+              format="webp"
+            />
+          </Transition>
+        </template>
       </AppCard>
 
       <button
-        class="app-img-gallery__next lg:absolute top-0 w-12 lg:h-full items-center justify-center hover:bg-gray-800 transition-colors"
+        class="app-img-gallery__next lg:absolute top-0 w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
         :class="{
-          'opacity-25 cursor-not-allowed': !showNextArrow,
+          '!opacity-25 cursor-not-allowed hover:bg-gray-800': !showNextArrow,
           'opacity-75': showNextArrow
         }"
+        aria-label="previous image"
         @click.stop.prevent="goToNextImage"
       >
         <FontAwesomeIcon
@@ -149,8 +161,11 @@ const showPreviousArrow = computed(() => {
   return selectedIndex.value > 0
 })
 
+const transitionName = ref('slide-next')
+
 function goToPreviousImage () {
   if (selectedIndex.value === 0) { return }
+  transitionName.value = 'slide-prev'
   selectedIndex.value--
   selectedImage.value = props.images[selectedIndex.value]
 }
@@ -161,6 +176,7 @@ const showNextArrow = computed(() => {
 
 function goToNextImage () {
   if (selectedIndex.value === props.images.length - 1) { return }
+  transitionName.value = 'slide-next'
   selectedIndex.value++
   selectedImage.value = props.images[selectedIndex.value]
 }
@@ -174,19 +190,53 @@ function goToNextImage () {
 
   &__dialog-content {
     width: 100%;
-    max-width: 960px;
+    max-width: 1056px;
   }
 
   &__prev {
     @screen md {
-      left: -48px;
+      left: 0px;
     }
   }
 
   &__next {
     @screen md {
-      right: -48px;
+      right: 0px;
     }
   }
+
+  &__screen {
+    @apply transition-all;
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.slide-next-enter-from,
+.slide-next-leave-to,
+.slide-prev-enter-from,
+.slide-prev-leave-to {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slide-next-enter-from {
+  transform: translateX(100px);
+}
+
+.slide-next-leave-to {
+  z-index: 10;
+  transform: translateX(-100px);
+}
+
+.slide-prev-enter-from {
+  transform: translateX(-100px);
+}
+
+.slide-prev-leave-to {
+  z-index: 10;
+  transform: translateX(100px);
 }
 </style>

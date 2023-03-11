@@ -1,6 +1,6 @@
 <template>
   <section
-    id="app-hero"
+    id="about"
     class="app-hero bg-gray-900"
   >
     <div class="app-hero__container container mx-auto h-full flex items-center justify-center shadow-md">

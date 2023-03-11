@@ -2,13 +2,17 @@
 export default defineNuxtConfig({
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
-    '/assets/css/index.css',
+    '/assets/css/index.css'
   ],
 
   modules: [
     '@nuxt/image-edge',
     '@nuxtjs/tailwindcss'
   ],
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  }
 
   // postcss: {
   //   plugins: {
