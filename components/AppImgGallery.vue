@@ -12,6 +12,7 @@
       <NuxtImg
         :src="images[0]?.img"
         class="block w-full"
+        :alt="images[0]?.alt"
       />
     </AppCard>
   </div>
@@ -39,14 +40,14 @@
   </div>
 
   <!-- Selected Image (Dialog) -->
-  <Transition name="gallery">
+  <Transition name="gallery" @after-leave="handleDialogLeave" @enter="transitionName = ''">
     <div
-      v-if="selectedImage"
-      class="app-img-gallery__dialog fixed top-0 right-0 left-0 bottom-0 z-20 flex items-center justify-center select-none text-white transition-all"
-      @click="selectedImage = null"
+      v-show="showDialog"
+      class="app-img-gallery__dialog fixed top-0 right-0 left-0 bottom-0 z-20 flex items-center justify-center select-none text-white transition-all duration-300"
+      @click="hideSelectedImage"
       @keydown.esc="selectedImage = null"
     >
-      <div class="app-img-gallery__dialog-content relative flex overflow-hidden px-12 max-h-[540px] transition-all">
+      <div class="app-img-gallery__dialog-content relative flex overflow-hidden px-12 max-h-[540px] transition-all duration-300 delay-150">
         <button
           class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
           :class="{
@@ -74,12 +75,14 @@
           >
             <Transition :name="transitionName">
               <NuxtImg
-                v-show="imageObject.img === selectedImage.img"
+                v-show="imageObject.img === selectedImage?.img"
+                :key="`screen-${index}`"
                 :src="imageObject.img"
                 class="app-img-gallery__screen block w-full"
                 width="960"
                 height="540"
-                :alt="`${selectedImage.alt} screenshot`"
+                loading="lazy"
+                :alt="`${imageObject?.alt} screenshot`"
                 format="webp"
               />
             </Transition>
@@ -124,6 +127,8 @@ const galleryImages = computed(() => {
 
 const selectedImage = ref(null)
 
+const showDialog = ref(false)
+
 const selectedIndex = ref(null)
 
 function keyupListener (event) {
@@ -148,14 +153,17 @@ function removeKeyboardEventListener () {
   window.removeEventListener('keyup', keyupListener)
 }
 
-function selectImage (image, index) {
+async function selectImage (image, index) {
   selectedIndex.value = index
   selectedImage.value = image
   addKeyboardEventListener()
+  await nextTick()
+  showDialog.value = true
 }
 
 function hideSelectedImage () {
-  selectedImage.value = null
+  showDialog.value = false
+  // selectedImage.value = null
   removeKeyboardEventListener()
 }
 
@@ -163,7 +171,7 @@ const showPreviousArrow = computed(() => {
   return selectedIndex.value > 0
 })
 
-const transitionName = ref('slide-next')
+const transitionName = ref('')
 
 function goToPreviousImage () {
   if (selectedIndex.value === 0) { return }
@@ -181,6 +189,13 @@ function goToNextImage () {
   transitionName.value = 'slide-next'
   selectedIndex.value++
   selectedImage.value = props.images[selectedIndex.value]
+}
+
+function handleDialogLeave () {
+  console.log('LEEEEAAAVVE')
+  // selectImage.value = null
+  selectedImage.value = null
+  transitionName.value = ''
 }
 </script>
 
@@ -211,7 +226,7 @@ function goToNextImage () {
   }
 
   &__screen {
-    @apply transition-all;
+    @apply transition-all duration-300;
     transform: translateX(0px);
     opacity: 1;
   }
@@ -256,6 +271,8 @@ function goToNextImage () {
 }
 
 .gallery-leave-to {
-  transition-duration: 0.3s;
+  .app-img-gallery__dialog-content {
+    transition-delay: 0ms;
+  }
 }
 </style>
