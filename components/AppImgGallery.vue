@@ -39,68 +39,70 @@
   </div>
 
   <!-- Selected Image (Dialog) -->
-  <div
-    v-if="selectedImage"
-    class="app-img-gallery__dialog fixed top-0 right-0 left-0 bottom-0 z-20 flex items-center justify-center select-none text-white"
-    @click="selectedImage = null"
-    @keydown.esc="selectedImage = null"
-  >
-    <div class="app-img-gallery__dialog-content relative flex overflow-hidden px-12 max-h-[540px]">
-      <button
-        class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
-        :class="{
-          'opacity-25 cursor-not-allowed hover:bg-gray-800': !showPreviousArrow,
-          'opacity-75': showPreviousArrow
-        }"
-        aria-label="previous image"
-        @click.stop.prevent="goToPreviousImage"
-      >
-        <FontAwesomeIcon
-          icon="angle-left"
-          size="2x"
-        />
-      </button>
-
-      <AppCard
-        class="app-img-gallery__selected-image w-full overflow-hidden max-w-[960px] relative"
-        padding
-        rounded
-        @click.prevent.stop
-      >
-        <template
-          v-for="(imageObject, index) in images"
-          :key="`screen-${index}`"
+  <Transition name="gallery">
+    <div
+      v-if="selectedImage"
+      class="app-img-gallery__dialog fixed top-0 right-0 left-0 bottom-0 z-20 flex items-center justify-center select-none text-white transition-all"
+      @click="selectedImage = null"
+      @keydown.esc="selectedImage = null"
+    >
+      <div class="app-img-gallery__dialog-content relative flex overflow-hidden px-12 max-h-[540px] transition-all">
+        <button
+          class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
+          :class="{
+            'opacity-25 cursor-not-allowed hover:bg-gray-800': !showPreviousArrow,
+            'opacity-75': showPreviousArrow
+          }"
+          aria-label="previous image"
+          @click.stop.prevent="goToPreviousImage"
         >
-          <Transition :name="transitionName">
-            <NuxtImg
-              v-show="imageObject.img === selectedImage.img"
-              :src="imageObject.img"
-              class="app-img-gallery__screen block w-full"
-              width="960"
-              height="540"
-              :alt="`${selectedImage.alt} screenshot`"
-              format="webp"
-            />
-          </Transition>
-        </template>
-      </AppCard>
+          <FontAwesomeIcon
+            icon="angle-left"
+            size="2x"
+          />
+        </button>
 
-      <button
-        class="app-img-gallery__next lg:absolute top-0 w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
-        :class="{
-          '!opacity-25 cursor-not-allowed hover:bg-gray-800': !showNextArrow,
-          'opacity-75': showNextArrow
-        }"
-        aria-label="previous image"
-        @click.stop.prevent="goToNextImage"
-      >
-        <FontAwesomeIcon
-          icon="angle-right"
-          size="2x"
-        />
-      </button>
+        <AppCard
+          class="app-img-gallery__selected-image w-full overflow-hidden max-w-[960px] relative"
+          padding
+          rounded
+          @click.prevent.stop
+        >
+          <template
+            v-for="(imageObject, index) in images"
+            :key="`screen-${index}`"
+          >
+            <Transition :name="transitionName">
+              <NuxtImg
+                v-show="imageObject.img === selectedImage.img"
+                :src="imageObject.img"
+                class="app-img-gallery__screen block w-full"
+                width="960"
+                height="540"
+                :alt="`${selectedImage.alt} screenshot`"
+                format="webp"
+              />
+            </Transition>
+          </template>
+        </AppCard>
+
+        <button
+          class="app-img-gallery__next lg:absolute top-0 w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
+          :class="{
+            '!opacity-25 cursor-not-allowed hover:bg-gray-800': !showNextArrow,
+            'opacity-75': showNextArrow
+          }"
+          aria-label="previous image"
+          @click.stop.prevent="goToNextImage"
+        >
+          <FontAwesomeIcon
+            icon="angle-right"
+            size="2x"
+          />
+        </button>
+      </div>
     </div>
-  </div>
+  </Transition>
 </template>
 
 <script setup>
@@ -186,11 +188,14 @@ function goToNextImage () {
 .app-img-gallery {
   &__dialog {
     background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
   }
 
   &__dialog-content {
     width: 100%;
     max-width: 1056px;
+    transform: scale(1);
+    opacity: 1;
   }
 
   &__prev {
@@ -238,5 +243,19 @@ function goToNextImage () {
 .slide-prev-leave-to {
   z-index: 10;
   transform: translateX(100px);
+}
+
+.gallery-enter-from,
+.gallery-leave-to {
+  opacity: 0;
+
+  .app-img-gallery__dialog-content {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.gallery-leave-to {
+  transition-duration: 0.3s;
 }
 </style>
