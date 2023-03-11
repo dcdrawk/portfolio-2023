@@ -20,54 +20,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'CanadaDrivesShop',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-landing.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-landing.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-catalog.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-catalog.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-vehicle.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-vehicle.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-browse.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-browse.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-finance.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-finance.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-help-centre.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-help-centre.png',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/d2c/d2c-how-it-works.png',
-        imgWebp: '/img/websites/canada-drives/d2c/d2c-how-it-works.png',
-        alt: 'Freedom Car Credit screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-landing.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-catalog.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-vehicle.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-browse.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-finance.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-help-centre.png',
+    alt: 'Canada Drives Shop screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/d2c/d2c-how-it-works.png',
+    alt: 'Canada Drives Shop screenshot'
   }
-}
+]
 </script>

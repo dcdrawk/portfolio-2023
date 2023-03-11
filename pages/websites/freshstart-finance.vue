@@ -21,54 +21,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'FreshStartFinance',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-3.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-3.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-4.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-4.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-5.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-5.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-6.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freshstart/freshstart-screenshot-6.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Fresh Start screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-landing.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-1.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-2.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-3.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-4.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-5.png',
+    alt: 'Fresh Start screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freshstart/freshstart-screenshot-6.png',
+    alt: 'Fresh Start screenshot'
   }
-}
+]
 </script>

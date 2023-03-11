@@ -27,54 +27,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'FreedomCarCredit',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-app.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-app.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-home-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-home-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-home-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-home-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-products.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-products.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-contact.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-contact.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/freedom/freedom-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/freedom/freedom-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-app.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-home-1.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-home-2.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-how-it-works.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-products.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-contact.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/freedom/freedom-apply.png',
+    alt: 'Freedom Car Credit screenshot'
   }
-}
+]
 </script>

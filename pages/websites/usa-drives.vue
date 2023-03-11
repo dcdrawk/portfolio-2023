@@ -19,54 +19,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'USADrives',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-inventory.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-inventory.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-how-it-works.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-about.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-about.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-contact-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-contact-1.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-contact-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-contact-2.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/usadrives/usadrives-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/usadrives/usadrives-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-landing.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-inventory.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-how-it-works.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-about.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-contact-1.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-contact-2.png',
+    alt: 'USA Drives screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/usadrives/usadrives-apply.png',
+    alt: 'USA Drives screenshot'
   }
-}
+]
 </script>

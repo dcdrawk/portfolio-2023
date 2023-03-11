@@ -17,10 +17,3 @@
     img-right
   />
 </template>
-
-<script>
-export default {
-  // Name
-  name: 'GoldStandardPhysio'
-}
-</script>

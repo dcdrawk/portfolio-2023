@@ -19,54 +19,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'SpringFinancial',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/cd/cd-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-inventory.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-inventory.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-blog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-blog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-newsroom.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-newsroom.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-calculator.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-calculator.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/cd/cd-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/cd/cd-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/cd/cd-landing.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-inventory.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-blog.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-newsroom.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-calculator.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-help-centre.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/cd/cd-apply.png',
+    alt: 'Freedom Car Credit screenshot'
   }
-}
+]
 </script>

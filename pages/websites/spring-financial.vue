@@ -19,54 +19,35 @@
   />
 </template>
 
-<script>
-export default {
-  // Name
-  name: 'SpringFinancial',
-
-  // Setup
-  setup () {
-    const imgGallery = [
-      {
-        img: '/img/websites/canada-drives/spring/spring-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-landing.png?sizes[]=420,sizes[]=600,sizes[]=750,sizes[]=1200&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-loan.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-loan.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-mortgage.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-mortgage.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-blog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-blog.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-reviews.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-reviews.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-help-centre.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      },
-      {
-        img: '/img/websites/canada-drives/spring/spring-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=jpg',
-        imgWebp: '/img/websites/canada-drives/spring/spring-apply.png?sizes[]=150,sizes[]=300,sizes[]=600,sizes[]=900&format=webp',
-        alt: 'Freedom Car Credit screenshot'
-      }
-    ]
-
-    return {
-      imgGallery
-    }
+<script setup>
+const imgGallery = [
+  {
+    img: '/img/websites/canada-drives/spring/spring-landing.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-loan.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-mortgage.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-blog.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-reviews.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-help-centre.png',
+    alt: 'Freedom Car Credit screenshot'
+  },
+  {
+    img: '/img/websites/canada-drives/spring/spring-apply.png',
+    alt: 'Freedom Car Credit screenshot'
   }
-}
+]
 </script>
