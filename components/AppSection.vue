@@ -7,6 +7,7 @@
     </h3>
 
     <slot />
+
     <AppDivider
       v-if="!hideDivider"
       :margin="dividerMargin"

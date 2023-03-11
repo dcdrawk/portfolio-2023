@@ -1,6 +1,6 @@
 <template>
   <AppCard
-    padding="py-4 px-4"
+    padding="py-4 px-4 border border-gray-300 dark:border-gray-700"
   >
     <h3 class="text-xl font-semibold mb-2 dark:text-white transition-colors duration-500">
       {{ title }}

@@ -29,37 +29,31 @@ const websites = reactive([{
   title: 'Canada Drives (Ecommerce Shop)',
   subtitle: 'Purchase or finance a vehicle from any device',
   img: '/img/websites/canada-drives/cd-shop.jpg',
-  imgTop: '-100px',
   path: '/websites/canada-drives-shop'
 }, {
   title: 'Canada Drives',
   subtitle: 'Canadian Car Loans',
   img: '/img/websites/canada-drives/cd-website.jpg',
-  imgTop: '-60px',
   path: '/websites/canada-drives'
 }, {
   title: 'Spring Financial',
   subtitle: 'Personal Loans & Mortgages',
   img: '/img/websites/canada-drives/spring.jpg',
-  imgTop: '-50px',
   path: '/websites/spring-financial'
 }, {
   title: 'USA Drives',
   subtitle: 'USA Car Loans',
   img: '/img/websites/canada-drives/usa-drives.jpg',
-  imgTop: '-80px',
   path: '/websites/usa-drives'
 }, {
   title: 'Fresh Start',
   subtitle: 'Online Personal Loans',
   img: '/img/websites/canada-drives/fsf.jpg',
-  imgTop: '-70px',
   path: '/websites/freshstart-finance'
 }, {
   title: 'Freedom Car Credit',
   subtitle: 'UK Car Loans',
   img: '/img/websites/canada-drives/freedom.jpg',
-  imgTop: '-70px',
   path: '/websites/freedom-car-credit'
 }, {
   title: 'Canadian Lymphedema Framework',

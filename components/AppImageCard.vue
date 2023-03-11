@@ -1,12 +1,11 @@
 <template>
   <AppCard
-    class="app-img-card h-52 relative bg-white"
+    class="app-img-card h-52 relative bg-white max-h-[208px] flex border border-gray-300 dark:border-gray-700 items-center justify-center shadow transition-shadow hover:shadow-md"
     padding="p-0"
   >
     <NuxtImg
       :src="img"
-      :style="{ top: imgTop }"
-      class="app-img-card__img w-full relative"
+      class="app-img-card__img w-full relative min-w-[350px]"
       format="webp"
       width="480"
       height="480"
@@ -14,10 +13,13 @@
     />
 
     <div class="app-img-card__text bg-black bg-opacity-60 absolute right-0 bottom-0 text-white w-full px-4 py-3">
-      <h3 class="text-xl font-semibold">
+      <h3 class="text-xl font-semibold whitespace-nowrap overflow-ellipsis overflow-hidden">
         {{ title }}
       </h3>
-      <h4>{{ subtitle }}</h4>
+
+      <h4 class="whitespace-nowrap overflow-ellipsis overflow-hidden">
+        {{ subtitle }}
+      </h4>
     </div>
   </AppCard>
 </template>
@@ -35,10 +37,6 @@ defineProps({
   img: {
     type: [String],
     default: ''
-  },
-  imgTop: {
-    type: String,
-    default: '-100px'
   }
 })
 </script>
