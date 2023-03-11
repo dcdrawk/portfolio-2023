@@ -9,7 +9,7 @@
           <AppNavItem
             v-for="(item, key, index) in navItems"
             :key="index"
-            @click="handleNavClick(item)"
+            @click="handleNavClick(item, $event)"
           >
             {{ key }}
           </AppNavItem>
@@ -41,7 +41,7 @@ defineProps({
   }
 })
 
-defineEmits([
+const emit = defineEmits([
   'close'
 ])
 
@@ -50,19 +50,27 @@ const router = useRouter()
 
 async function handleNavClick (item) {
   if (route.path !== '/') {
-    await router.push({ path: '/', hash: `#${item.anchor}` })
-    return
+    await router.push({ path: '/' })
+    await new Promise(resolve => setTimeout(resolve, 0))
   }
 
-  router.replace({
-    path: '/',
-    hash: `#${item.anchor}`
+  scrollTo(item)
+}
+
+function scrollTo (item) {
+  const isMobile = window?.innerWidth < 768
+  const headerOffset = isMobile ? 60 : 140
+  const el = document.getElementById(item.anchor)
+  const elPosition = el.getBoundingClientRect().top
+  const offset = elPosition + window.scrollY - headerOffset
+
+  window.scrollTo({
+    top: offset,
+    behavior: 'smooth'
   })
 
-  const isMobile = window?.innerWidth < 768
-
   if (isMobile) {
-    context.emit('close')
+    emit('close')
   }
 }
 

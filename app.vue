@@ -1,8 +1,10 @@
 <template>
   <div id="app" :class="theme">
-    <!-- <NuxtWelcome /> -->
+    <AppHeader />
 
     <NuxtPage />
+
+    <AppFooter />
   </div>
 </template>
 

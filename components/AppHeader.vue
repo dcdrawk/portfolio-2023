@@ -16,7 +16,7 @@
           Devin Cook
         </h1>
         <h3 class="font-display text-xs md:text-md text-white opacity-75 hidden md:block">
-          Front End Software Developer
+          Sr. Front End Software Developer
         </h3>
       </div>
     </div>
