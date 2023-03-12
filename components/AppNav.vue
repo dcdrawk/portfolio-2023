@@ -139,7 +139,6 @@ function toggleDarkMode () {
 
 .sidenav-enter-from,
 .sidenav-leave-to {
-  /* opacity: 0; */
   transform: translateX(-100%);
 }
 </style>

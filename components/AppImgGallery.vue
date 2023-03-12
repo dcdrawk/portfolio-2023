@@ -170,7 +170,6 @@ async function selectImage (image, index) {
 
 function hideSelectedImage () {
   showDialog.value = false
-  // selectedImage.value = null
   removeKeyboardEventListener()
 }
 
@@ -199,8 +198,6 @@ function goToNextImage () {
 }
 
 function handleDialogLeave () {
-  console.log('LEEEEAAAVVE')
-  // selectImage.value = null
   selectedImage.value = null
   transitionName.value = ''
 }

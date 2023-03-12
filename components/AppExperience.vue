@@ -81,12 +81,6 @@ function toggleExperience () {
   slotStyle.value.height = props.isOpen ? '0px' : `${height}px`
 }
 
-// const iconText = computed(() => props.isOpen ? 'Hide Role' : 'View Role')
-
-// const iconClass = computed(() => props.isOpen ? 'icon-up' : 'icon-down')
-
-// const slotClass = computed(() => props.collapsible && props.isOpen ? 'open' : 'closed')
-
 const slotStyle = ref(props.collapsible ? { height: '0px' } : null)
 </script>
 
@@ -110,9 +104,5 @@ const slotStyle = ref(props.collapsible ? { height: '0px' } : null)
 .slot-container {
   transition: height 0.35s ease-out;
   will-change: height;
-}
-
-.slot-text {
-  /* transition: opacity 0.35s ease-out; */
 }
 </style>
