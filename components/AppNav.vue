@@ -92,18 +92,11 @@ const navItems = {
 /**
  * Dark Mode
  */
-const theme = useStatefulCookie('theme')
-
-const isDarkMode = computed(() => theme.value === 'dark')
+const colorMode = useColorMode()
+const isDarkMode = computed(() => colorMode.value === 'dark')
 
 function toggleDarkMode () {
-  if (theme.value === 'dark') {
-    document.documentElement.classList.remove('dark')
-    theme.value = 'light'
-  } else {
-    document.documentElement.classList.add('dark')
-    theme.value = 'dark'
-  }
+  colorMode.preference = isDarkMode.value ? 'light' : 'dark'
 }
 </script>
 

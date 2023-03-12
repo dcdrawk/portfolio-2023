@@ -12,6 +12,9 @@
       <NuxtImg
         :src="images[0]?.img"
         class="block w-full"
+        format="webp"
+        width="837"
+        height="470"
         :alt="images[0]?.alt"
       />
     </AppCard>
