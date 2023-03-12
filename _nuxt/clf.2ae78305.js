@@ -1,4 +1,0 @@
-import{_ as t}from"./AppProject.7c4b2738.js";import{a as o,o as s,c as a}from"./entry.faf1bff7.js";import"./AppCard.5d93cbb4.js";import"./composables.80664e82.js";const r={};function n(c,i){const e=t;return s(),a(e,{title:"Canadian Lymphedema Framework",subtitle:"Lymphedema Education and Awareness",date:"May 2015",anchor:"websites",breadcrumb:"Websites",technology:["HTML","CSS","PHP","Javascript","Wordpress","Custom Theme"],roles:["Web Developer"],website:"http://canadalymph.ca/",summary:`\r
-      A website project for Website On Demand. This was an existing site that required a number of new pages, images, banners, and articles to be added.\r
-      I used PHP, HTML, and CSS to add these new sections, and I followed Photoshop mockups provided for me by our designer.\r
-    `,img:"/img/websites/clf/clf-screenshot.jpg","img-right":""})}const l=o(r,[["render",n]]);export{l as default};
