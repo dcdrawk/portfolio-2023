@@ -14,10 +14,10 @@
       <nuxt-link to="/">
         <h1 class="font-display text-2xl md:text-3xl text-white">
           Devin Cook
+          <span class="block font-display text-xs md:text-md text-white opacity-75 hidden md:block">
+            Sr. Front End Software Developer
+          </span>
         </h1>
-        <h3 class="font-display text-xs md:text-md text-white opacity-75 hidden md:block">
-          Sr. Front End Software Developer
-        </h3>
       </nuxt-link>
     </div>
 
