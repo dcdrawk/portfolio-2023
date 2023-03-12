@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare",
     "lint": "npx eslint ./ --ext .js,.vue --ignore-path .gitignore",
     "stylelint": "npx stylelint **/*.{css,vue}",
-    "deploy": "cp _config.yml dist/_config.yml && gh-pages -d dist"
+    "deploy": "cp .cpanel.yml dist/.cpanel.yml && gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
