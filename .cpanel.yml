@@ -1,0 +1,14 @@
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/user/public_html/
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp _payload.js $DEPLOYPATH
+ - /bin/cp 200.html $DEPLOYPATH
+ - /bin/cp 400.html $DEPLOYPATH
+ - /bin/cp favicon.ico $DEPLOYPATH
+ - /bin/cp robots.txt $DEPLOYPATH
+ - /bin/cp -R _ipx $DEPLOYPATH
+ - /bin/cp -R _nuxt $DEPLOYPATH
+ - /bin/cp -R img $DEPLOYPATH
+ - /bin/cp -R projects $DEPLOYPATH
+ - /bin/cp -R websites $DEPLOYPATH
