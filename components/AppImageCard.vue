@@ -46,14 +46,14 @@ defineProps({
 .app-img-card {
   cursor: pointer;
 
+  &__img {
+    @apply transition-transform ease-out duration-300;
+  }
+
   &:hover {
     .app-img-card__img {
       transform: scale(1.05);
     }
-  }
-
-  &__img {
-    @apply transition-transform ease-out duration-300;
   }
 
   &__text {

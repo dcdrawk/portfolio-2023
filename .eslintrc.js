@@ -10,18 +10,25 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   extends: [
-    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-essential',
     'plugin:nuxt/recommended',
-    '@vue/standard',
-    '@nuxtjs/eslint-config-typescript'
+    '@nuxtjs/eslint-config-typescript',
+    'prettier',
   ],
   // parserOptions: {
   // parser: 'babel-eslint'
   // },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/no-unused-components': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-    '@typescript-eslint/no-unused-vars': 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    // '@typescript-eslint/no-unused-vars': 'off',
+    // 'vue/max-attributes-per-line': ['error', {
+    //   singleline: {
+    //     max: 1
+    //   },
+    //   multiline: {
+    //     max: 1
+    //   }
+    // }]
   }
 }

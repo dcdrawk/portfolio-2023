@@ -43,7 +43,11 @@
   </div>
 
   <!-- Selected Image (Dialog) -->
-  <Transition name="gallery" @after-leave="handleDialogLeave" @enter="transitionName = ''">
+  <Transition
+    name="gallery"
+    @after-leave="handleDialogLeave"
+    @enter="transitionName = ''"
+  >
     <div
       v-show="showDialog"
       class="app-img-gallery__dialog fixed top-0 right-0 left-0 bottom-0 z-20 flex items-center justify-center select-none text-white transition-all duration-300"
