@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <Head>
+      <Title>Devin Cook - Sr. Frontend Developer</Title>
+      <Meta name="description" content="I'm a Senior Frontend Developer with over 7 years experience with JavaScript and Modern Web Development." />
+    </Head>
+
     <AppHeader />
 
     <main>

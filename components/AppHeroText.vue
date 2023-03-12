@@ -4,8 +4,9 @@
       <NuxtImg
         src="/img/devin.png"
         format="webp"
-        width="225"
-        height="225"
+        width="334"
+        height="334"
+        alt="Devin"
         class="devin__img z-10 relative md:mr-10 h-auto block flex-grow-1 flex-shrink-0 self-center border-4 border-tory-blue-200 shadow-md"
       />
     </div>

@@ -5,6 +5,7 @@
   >
     <NuxtImg
       :src="img"
+      :alt="`screenshot of ${title}`"
       class="app-img-card__img w-full relative min-w-[350px]"
       format="webp"
       width="480"

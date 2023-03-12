@@ -6,8 +6,10 @@
     <div class="app-hero__container container mx-auto h-full flex items-center justify-center shadow-md">
       <AppHeroText />
     </div>
+
     <NuxtImg
       src="/img/desktop.jpg"
+      alt="background image of a computer monitor and keyboard"
       width="1350"
       height="900"
       quality="50"
