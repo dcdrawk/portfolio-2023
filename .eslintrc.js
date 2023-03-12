@@ -12,8 +12,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     'plugin:nuxt/recommended',
-    '@nuxtjs/eslint-config-typescript',
-    'prettier',
+    '@nuxtjs/eslint-config-typescript'
+    // 'prettier',
   ],
   // parserOptions: {
   // parser: 'babel-eslint'
