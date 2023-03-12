@@ -6,7 +6,7 @@
   >
     <AppCard
       padding
-      class="w-full cursor-pointer"
+      class="cursor-pointer"
       @click="selectImage(images[0], 0)"
     >
       <NuxtImg
@@ -28,7 +28,7 @@
       v-for="(imageObject, index) in galleryImages"
       :key="index"
       padding
-      class="w-full inline-block cursor-pointer"
+      class="inline-block cursor-pointer"
       @click="selectImage(imageObject, index + 1)"
     >
       <NuxtImg
@@ -54,7 +54,7 @@
         <button
           class="app-img-gallery__prev lg:absolute w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
           :class="{
-            'opacity-25 cursor-not-allowed hover:bg-gray-800': !showPreviousArrow,
+            'opacity-25 cursor-not-allowed !hover:bg-gray-800': !showPreviousArrow,
             'opacity-75': showPreviousArrow
           }"
           aria-label="previous image"
@@ -67,7 +67,7 @@
         </button>
 
         <AppCard
-          class="app-img-gallery__selected-image w-full overflow-hidden max-w-[960px] relative"
+          class="app-img-gallery__selected-image max-w-[960px] relative"
           padding
           rounded
           @click.prevent.stop
@@ -95,7 +95,7 @@
         <button
           class="app-img-gallery__next lg:absolute top-0 w-12 lg:h-full items-center justify-center bg-gray-800 hover:bg-gray-700 transition-colors"
           :class="{
-            '!opacity-25 cursor-not-allowed hover:bg-gray-800': !showNextArrow,
+            '!opacity-25 cursor-not-allowed !hover:bg-gray-800': !showNextArrow,
             'opacity-75': showNextArrow
           }"
           aria-label="previous image"

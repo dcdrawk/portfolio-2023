@@ -1,6 +1,6 @@
 <template>
   <AppCard
-    class="app-img-card h-52 relative bg-white max-h-[208px] flex border border-gray-300 dark:border-gray-700 items-center justify-center shadow transition-shadow hover:shadow-md"
+    class="app-img-card h-52 relative max-h-[208px] flex border border-gray-300 dark:border-gray-700 items-center justify-center hover:shadow-md"
     padding="p-0"
   >
     <NuxtImg

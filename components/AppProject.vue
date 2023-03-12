@@ -168,12 +168,15 @@
       >
         <AppCard
           padding
-          class="w-full h-auto inline-block"
+          class="h-auto inline-block"
         >
-          <img
+          <NuxtImg
             :src="img"
+            width="426"
+            :alt="title"
             class="block w-full"
-          >
+            format="webp"
+          />
         </AppCard>
       </div>
     </div>
