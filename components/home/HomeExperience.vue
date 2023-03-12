@@ -24,17 +24,31 @@
 
 <script setup>
 const experiences = reactive([{
-  title: 'Lead Front End Developer',
+  title: 'Lead Frontend Engineer',
   company: 'Canada Drives',
-  startDate: 'December 2017',
+  startDate: 'November 2017',
   open: false,
   body: `
     <p class="mb-2">
-      Currently leading the front-end team working on our consumer lending brand <a href="//springfinancial.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">springfinancial.ca.</a> Responsible for scoping new features and providing hands-on support to the team. Improvements to our app flow increased the number of users who submit all required documents from 20% to 70%.
+      Involved with creating project tasks, helping with sprint planning, code reviews, and delegating work between team members. Facilitated on-boarding of new team members, providing mentorship to Junior Developers through 1-on-1 meetings and lunch-and-learn presentations. As part of the Core Agile team, assisted with improvements to our Continuous Integration pipeline, changes to our unit test approach, and upgrading our codebase from Vue 2 to Vue 3.
     </p>
 
     <p>
-      Our car shopping platform  <a href="//shop.canadadrives.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">shop.canadadrives.ca</a> was built from the ground-up using Vue.js, Nuxt.js,  Shopify storefront API, and our custom backend. I helped architect and develop the application structure while providing mentorship to co-workers. In recent months we have seen exponential growth in customer acquisition as we continue to improve and expand to more provinces.
+      Responsible for leading Frontend development for Canada Drives' vehicle purchasing platform <a href="//shop.canadadrives.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">shop.canadadrives.ca</a>. This ecommerce website was built from the ground-up using VueJS, Nuxt, Shopify storefront API, and our custom backend. Helped scope, architect, and implement new features. Coordinated requirements between Agile teams.
+    </p>`
+}, {
+  title: 'Lead Frontend Engineer',
+  company: 'Spring Financial',
+  startDate: 'December 2021',
+  endDate: 'November 2022',
+  open: false,
+  body: `
+    <p class="mb-2">
+      Led the Frontend team at <a href="//springfinancial.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">Spring Financial</a>, a Canada Drives' sister-company. Responsible for scoping and developing new features, performing code reviews, and mentoring junior engineers. Documented coding standards and best practices for the team to follow. Contributed to our release management process by leading weekly meetings to coordinate between Agile teams, review in-progress features, and plan deployments.
+    </p>
+
+    <p>
+      Assisted the team with a re-branding of our company website and loan application flow using VueJS and Nuxt. The re-brand was successful, reducing user bounce rate, and increasing conversion rate by 15%. Changes to the application flow improved the rate that users submitted necessary documents from 20% to 70%.
     </p>`
 }, {
   title: 'Jr. Software Developer',
@@ -50,14 +64,14 @@ const experiences = reactive([{
     </p>
 
     <p>
-      Led front end development on a rewrite of an internal application. The previous app was built with
+      Led frontend development on a rewrite of an internal application. The previous app was built with
       Laravel and jQuery, while the rewrite was built with Vue.js, ES6, SCSS, and Webpack. The code and
       project structure was easier to maintain than the previous iteration. The new version reduced the
       time needed to add new features, while improving development time, user experience, and client-side
       performance.
     </p>`
 }, {
-  title: 'Jr. Front End Developer',
+  title: 'Jr. Frontend Developer',
   company: 'Phoenix Restorations',
   startDate: 'September 2015',
   endDate: 'July 2016',

@@ -7,7 +7,7 @@
     breadcrumb="Projects"
     website="http://dcdrawk.github.io/381a2/#/"
     github="https://github.com/dcdrawk/381a2/"
-    :technology="['HTML', 'CSS', 'Javascript', 'ES6', 'AngularJS', 'ThreeJS', 'PhysiJS']"
+    :technology="['Mobile-Only', 'HTML', 'CSS', 'Javascript', 'ES6', 'AngularJS', 'ThreeJS', 'PhysiJS']"
     :roles="['UX Designer', 'Developer']"
     summary="
       DiceRoller was a small web app prototype I worked on for my mobile design class. The goal was to take an app
