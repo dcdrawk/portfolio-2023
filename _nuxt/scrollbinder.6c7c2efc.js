@@ -1,4 +1,4 @@
-import{_ as r}from"./AppProject.702f62dc.js";import{a as t,o,c as a}from"./entry.35dedf68.js";import"./AppCard.16930a7b.js";import"./composables.ba3afd67.js";const n={};function i(s,c){const e=r;return o(),a(e,{title:"Scrollbinder",subtitle:"AngularJS Project",anchor:"projects",date:"Spring 2015",breadcrumb:"Projects",website:"http://dcdrawk.github.io/381a1/app/#/",github:"https://github.com/dcdrawk/381a1/",technology:["HTML","CSS","Javascript","ES6","Angular"],roles:["Programmer","UX Designer","Wireframing"],summary:`\r
+import{_ as r}from"./AppProject.ee72ad5c.js";import{a as t,o as a,c as o}from"./entry.e214c705.js";import"./AppCard.eeebc53b.js";const n={};function i(s,c){const e=r;return a(),o(e,{title:"Scrollbinder",subtitle:"AngularJS Project",anchor:"projects",date:"Spring 2015",breadcrumb:"Projects",website:"http://dcdrawk.github.io/381a1/app/#/",github:"https://github.com/dcdrawk/381a1/",technology:["HTML","CSS","Javascript","ES6","Angular"],roles:["Programmer","UX Designer","Wireframing"],summary:`\r
       ScrollBinder is a character planner app for the popular table-top game, Dungeons and Dragons.\r
       Created as part of a mobile design course, we were given the task of creating a web app that also\r
       utilized web services. ScrollBinder uses Google's Realtime API to enable collaboration between players.\r
@@ -11,4 +11,4 @@ import{_ as r}from"./AppProject.702f62dc.js";import{a as t,o,c as a}from"./entry
       ScrollBinder successfully reimagined the DnD experience by bringing. The responsive design\r
       allows it to work on any device, which greatly improves accessibility. I shared this app\r
       with my personal DnD group, and they continue to give me positive reviews and constructive feedback.\r
-    `,img:"/img/projects/scrollbinder-main.jpg","img-right":""})}const m=t(n,[["render",i]]);export{m as default};
+    `,img:"/img/projects/scrollbinder-main.jpg","img-right":""})}const g=t(n,[["render",i]]);export{g as default};
