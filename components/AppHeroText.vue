@@ -18,9 +18,7 @@
 
       <blockquote class="max-w-[660px] bg-golden-bell-500/60 py-4 px-4 rounded-md border-4 border-golden-bell-400 font-body mt-4 text-white text-md shadow-md">
         <p>
-          I'm a software developer with 7+ years of experience specializing in frontend technology and delivering quality user-experiences.
-          I have a strong background in JavaScript, CSS, and leadership roles. I focus on building performant, accessible, and responsive web applications
-          that follow modern standards.
+          I'm a software developer with 8 years of experience building accessible, performant, and responsive web applications. I have a strong technical background in JavaScript, Vue.js, and Nuxt, as well as mentorship experience leading teams of developers. I enjoy using modern web frameworks and implementing best-practices that enable myself and my team to deliver quality user-experiences.
         </p>
       </blockquote>
     </div>
