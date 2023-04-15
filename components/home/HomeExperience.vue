@@ -30,11 +30,11 @@ const experiences = reactive([{
   open: false,
   body: `
     <p class="mb-2">
-      Involved with creating project tasks, helping with sprint planning, code reviews, and delegating work between team members. Facilitated on-boarding of new team members, providing mentorship to Junior Developers through 1-on-1 meetings and lunch-and-learn presentations. As part of the Core Agile team, assisted with improvements to our Continuous Integration pipeline, changes to our unit test approach, and upgrading our codebase from Vue 2 to Vue 3.
+      Responsible for scoping and implementing new features with JavaScript, TypeScript, Vue.js, and Nuxt. Assisted with improvements to our Continuous Integration pipeline, maintaining unit test coverage with Jest, and upgrading the codebase from Vue 2 to Vue 3.
     </p>
 
     <p>
-      Responsible for leading Frontend development for Canada Drives' vehicle purchasing platform <a href="//shop.canadadrives.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">shop.canadadrives.ca</a>. This ecommerce website was built from the ground-up using VueJS, Nuxt, Shopify storefront API, and our custom backend. Helped scope, architect, and implement new features. Coordinated requirements between Agile teams.
+      Involved with creating tasks, sprint planning, code reviews, and delegating work between team members. Facilitated on-boarding of new team members, provided mentorship to Junior Developers through 1-on-1 meetings and lunch-and-learn presentations. Coordinated requirements between Agile teams. Received multiple accolades, including the Innovator Award in 2018, and the Mentor Award in 2020.
     </p>`
 }, {
   title: 'Lead Frontend Engineer',
@@ -48,7 +48,7 @@ const experiences = reactive([{
     </p>
 
     <p>
-      Assisted the team with a re-branding of our company website and loan application flow using VueJS and Nuxt. The re-brand was successful, reducing user bounce rate, and increasing conversion rate by 15%. Changes to the application flow improved the rate that users submitted necessary documents from 20% to 70%.
+      Assisted the team with a re-branding of our company website and loan application flow using Vue.js and Nuxt. The re-brand was successful, reducing user bounce rate, and increasing conversion rate by 15%. Changes to the application flow improved the rate that users submitted necessary documents from 20% to 70%.
     </p>`
 }, {
   title: 'Jr. Software Developer',

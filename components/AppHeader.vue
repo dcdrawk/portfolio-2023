@@ -1,6 +1,6 @@
 <template>
   <header class="bg-tory-blue-500 shadow-md sticky top-0 z-20">
-    <div class="container mx-auto py-0 md:py-3 md:px-4 xl:px-0 flex items-center">
+    <div class="container mx-auto py-0 md:py-3 md:px-4 2xl:px-0 flex items-center">
       <div
         class="h-12 w-12 flex items-center justify-center md:hidden cursor-pointer mr-2"
         @click="toggleNav"
@@ -12,9 +12,9 @@
         />
       </div>
       <nuxt-link to="/">
-        <h1 class="font-display text-2xl md:text-3xl text-white">
+        <h1 class="font-display text-2xl md:text-3xl text-white flex items-center md:block">
           Devin Cook
-          <span class="block font-display text-xs md:text-md text-white opacity-75 md:block">
+          <span class="block font-display text-base md:text-md text-white opacity-75 md:block border-l border-white/50 ml-2 pl-2 md:ml-0 md:pl-0 md:border-none">
             Software Developer
           </span>
         </h1>

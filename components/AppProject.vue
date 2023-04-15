@@ -1,5 +1,5 @@
 <template>
-  <div class="container dark:text-white pt-6 md:pt-12 px-4 xl:px-0">
+  <div class="container dark:text-white pt-6 md:pt-12 px-4 2xl:px-0">
     <div class="mb-2">
       <nuxt-link
         :to="`/#${anchor}`"
