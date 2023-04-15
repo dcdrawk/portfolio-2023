@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ACCOUNT/public_html/
+    - export DEPLOYPATH=/home/thewebdev/public_html/
     - /bin/cp -u -r * $DEPLOYPATH
