@@ -15,7 +15,7 @@
         <h1 class="font-display text-2xl md:text-3xl text-white">
           Devin Cook
           <span class="block font-display text-xs md:text-md text-white opacity-75 md:block">
-            Sr. Front End Software Developer
+            Software Developer
           </span>
         </h1>
       </nuxt-link>
