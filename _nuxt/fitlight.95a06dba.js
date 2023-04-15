@@ -1,4 +1,4 @@
-import{_ as t}from"./AppProject.932b7e89.js";import{a as i,o,c as r}from"./entry.65321f62.js";import"./AppCard.7da554a3.js";const s={};function n(a,c){const e=t;return o(),r(e,{title:"Fitlight",subtitle:"Agility Training Products",date:"October 2014",anchor:"websites",breadcrumb:"Websites",technology:["HTML","CSS","PHP","Javascript","Joomla","Custom Theme"],roles:["Web Developer"],website:"https://www.fitlighttraining.com/",summary:`\r
+import{_ as t}from"./AppProject.51e15eb6.js";import{a as i,o,c as r}from"./entry.22d2cfbd.js";import"./AppCard.913bf6be.js";const s={};function n(a,c){const e=t;return o(),r(e,{title:"Fitlight",subtitle:"Agility Training Products",date:"October 2014",anchor:"websites",breadcrumb:"Websites",technology:["HTML","CSS","PHP","Javascript","Joomla","Custom Theme"],roles:["Web Developer"],website:"https://www.fitlighttraining.com/",summary:`\r
       A website project for Website On Demand. When I worked on this website, many of the pages,\r
       images, and content were completed, but there were still a number of pages to be added.\r
       I was tasked with making the website responsive, as well as adding a section for members\r
