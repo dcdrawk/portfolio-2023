@@ -44,7 +44,7 @@ const experiences = reactive([{
   open: false,
   body: `
     <p class="mb-2">
-      Led the Frontend team at <a href="//springfinancial.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">Spring Financial</a>, a Canada Drives' sister-company. Responsible for scoping and developing new features, performing code reviews, and mentoring junior engineers. Documented coding standards and best practices for the team to follow. Contributed to our release management process by leading weekly meetings to coordinate between Agile teams, review in-progress features, and plan deployments.
+      Led the Frontend team at <a href="//springfinancial.ca" target="_blank" class="text-tory-blue-500 dark:text-tory-blue-100">Spring Financial</a>, a Canada Drives' sister-company. Responsible for scoping and developing new features, performing code reviews, and mentoring junior engineers. Documented coding standards and best practices for the team to follow. Contributed to our release management process by leading weekly meetings to coordinate between Agile teams, review in-progress features, and plan deployments. Received recognition with the Mentor Award in 2021.
     </p>
 
     <p>
